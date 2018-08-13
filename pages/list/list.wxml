@@ -1,0 +1,26 @@
+<!--pages/list/list.wxml-->
+<view class='warp'>
+
+    <!-- 文章列表模板 begin -->
+    <template name="lists">
+        <navigator class='navigator' url="/pages/detail/detail?id={{id}}" open-type="navigate" hover-class="other-navigator-hover">
+            <view class='list-img'>
+                <image src='{{img}}' class='img imgs'></image>
+            </view>
+            <view class='infos'>
+                <view class='list-title'>{{title}}</view>
+                <view class='list-cTime'>{{cTime}}</view>
+            </view>
+        </navigator>
+    </template>
+    <!-- 文章列表模板  end -->
+
+    <!-- 循环输出列表 begin -->
+
+    <view wx:for="{{lists}}" wx:key="index" class="list">
+            <template is="lists" data='{{...item}}'></template>
+    </view>
+
+    <!-- 循环输出列表 end -->
+
+</view>

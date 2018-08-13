@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<view class='warp'>
+    <view class='title'>{{info.title}}</view>
+    <view class='cTime'>{{info.cTime}}</view>
+    <view class='img'><image src='{{info.img}}' class='img' backgroun-sixa="cover"></image></view>
+    <view class='content'>{{info.content}}</view>
+</view>

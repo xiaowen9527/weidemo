@@ -1,0 +1,19 @@
+<!--pages/about/about.wxml-->
+<view class='about'>
+    <view class='about-wei'>
+        <view class='about-img'>
+            <image class='img' src='{{img}}'></image>
+        </view>
+        <view class='about-title'>黄小文</view>
+    </view>
+
+    <view class='info'>{{info}}</view>
+    <view class='about-content'>
+        <view class='contab'>{{contab}}</view>
+        <view class='tel'>联系电话：{{tel}}</view>
+        <view class='email'>联系邮箱：{{email}}</view>
+        <view class='address'>联系地址：{{address}}</view>
+    </view>
+
+
+</view>
